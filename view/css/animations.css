@@ -1,0 +1,65 @@
+/* CSS Animations */
+
+/* =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
+
+/* Start pagina */
+.introTEXT{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: "Moon Flower Bold", "Moon Flower";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introTEXT:nth-child(1){
+    animation: fade ease 7s alternate-reverse both;
+}
+
+.introTEXT:nth-child(2){
+    animation: fade ease 7s alternate both;
+}
+
+.introTEXT:nth-child(3){
+    animation: fade ease 7s alternate both;
+    animation-delay: 3s;
+}
+.introTEXT:nth-child(4){
+    animation: fade ease 7s alternate both;
+    animation-delay: 6s;
+}
+.start:nth-child(5){
+    animation: up ease 7s alternate both;
+    /* animation-duration: 30s; */
+    animation-delay: 9s;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: "Moon Flower Bold", "Moon Flower";
+}
+
+a.start:link { color:#000000; text-decoration:none; font-weight:normal; }
+a.start:visited { color: #000000; text-decoration:none; font-weight:normal; }
+a.start:hover { color: #000000; text-decoration:none; font-weight:normal; }
+a.start:active { color: #000000; text-decoration:none; font-weight:normal; }
+
+
+@keyframes fade{
+    0%, 50% {opacity: 0;}
+    90% {opacity:1;}
+    100% {opacity: 0;}
+}
+@keyframes up{
+    0%, 50% {opacity: 0;}
+    90% {opacity:1;}
+    100% {opacity: 1;}
+}
